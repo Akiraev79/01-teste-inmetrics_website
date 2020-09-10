@@ -1,6 +1,6 @@
 #language: pt
 
-@tag
+@Login
 Funcionalidade: Realizar login do Usuario
 
 	Cenario: Realizar login do Usuario

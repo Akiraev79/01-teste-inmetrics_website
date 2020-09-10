@@ -6,8 +6,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 
-@RunWith(CucumberOptions.class)				
-@CucumberOptions(features="br.com.inmetrics.teste.specs", glue={""}, dryRun=false)		
+@RunWith(Cucumber.class)				
+@CucumberOptions(
+		features="/src/test/java/br/com/inmetrics/teste/specs",
+		tags="@Login",
+		glue="br/com/inmetrics/teste/stepsdefinition", 
+		dryRun=false
+)		
 
 public class RunCucumberTest 				
 {		
