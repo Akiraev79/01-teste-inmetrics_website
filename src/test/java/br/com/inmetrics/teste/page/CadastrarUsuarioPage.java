@@ -20,7 +20,7 @@ public class CadastrarUsuarioPage {
 	
 	public void ClicarLinkCadastreSe() {
 		
-		dsl.ClicarBotao("//a[contains(text(),'Cadastre-se')]");
+		dsl.clicarBotao("//a[contains(text(),'Cadastre-se')]");
 	}
 	
 	/******* Page Cadastre-se ***********/
@@ -42,7 +42,7 @@ public class CadastrarUsuarioPage {
 	
 	public void ClicarBotaoCadastrar() {
 		
-		dsl.ClicarBotao("//button[@class='login100-form-btn']");
+		dsl.clicarBotao("//button[@class='login100-form-btn']");
 	}
 	
 	// Falta fazer esta validacão

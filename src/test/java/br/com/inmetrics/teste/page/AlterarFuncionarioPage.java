@@ -71,14 +71,26 @@ public class AlterarFuncionarioPage {
 		dsl.escrever("//input[@id='dinheiro']", salario);
 	}
 	
-	public void
+	public void SelecionarAlterarContratacaoPage(String option) {
+		
+		switch(option) {
+		
+			case "CLT": dsl.clicarRadio("//input[@id='clt']"); break;
+			case "PJ": dsl.clicarRadio("//input[@id='pj']"); break;
+		}
+	}
 	
+	public void ClicarBotaoEnviarPage() {
+		
+		dsl.clicarBotao("//input[@class='cadastrar-form-btn' and @type='submit']");
+	}
 	
+	// Fazer a validacao necessario da pagina com sucesso (sera a validacao num alert na pagina de lista funcionarios)
+	public boolean ValidarMensagemSucessoPage() {
+		
+		return true;
+		
+	}
 
 }
 
-/*
-E preencho campo tipo de contratacao
-E clico em Enviar
-Entao verifico a tela de empregados apresenta mensagem de alteracao feita com sucesso 
- */
